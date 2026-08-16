@@ -1,4 +1,4 @@
-# 🐶 DeepSeek Harness 桌面小宠（snoopy-pet 插件）
+# 🐶 DeepSeek Harness 桌面小宠
 
 做桌面小宠，挂在 DeepSeek Harness Web 界面上：
 
