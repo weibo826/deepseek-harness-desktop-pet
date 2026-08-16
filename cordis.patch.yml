@@ -1,0 +1,15 @@
+# DeepSeek Harness 桌面小宠 — profile bundle patch
+# 注册 snoopy-pet Loader 条目。浏览器半体（exports["./client"]）由 dsh.client
+# 声明发现；宿主半体（lib/index.js）可选地把使用者外部资源作为静态文件 serve。
+#
+# 可选配置（全部可省略，未配置时插件使用内置资源）：
+#   spritesDir   精灵图目录（含 idle.png / prepare.png / walk1.png / walk2.png）
+#   messagesFile 语录文件绝对路径（JSON 或纯文本，见 README「分时段语录库」）
+#   配置后重启 web 服务并刷新页面即可生效。
+
+- insert:
+    - id: snoopy-pet
+      name: '@dsh-local/snoopy-pet'
+      # config:
+      #   spritesDir: 'D:\my-pet-sprites'
+      #   messagesFile: 'D:\my-pet\messages.json'
