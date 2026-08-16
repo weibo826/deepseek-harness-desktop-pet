@@ -1,9 +1,9 @@
 # 🐶 DeepSeek Harness 桌面小宠（snoopy-pet 插件）
 
-把"视频里的小狗"做成 QQ 宠物风格的桌面小宠，挂在 DeepSeek Harness Web 界面上：
+做桌面小宠，挂在 DeepSeek Harness Web 界面上：
 
-- **形象来自你的素材**：4 姿态精灵图（静止 / 起身 / 行走×2），已自动去背景
-- **两脚站立、两脚行走**：连贯帧动画 idle → prepare → walk1 → walk2 → 循环
+- **形象来自你的素材**：4 姿态图（静止 / 起身 / 行走×2），已自动去背景
+- **四脚站立、行走**：连贯帧动画 idle → prepare → walk1 → walk2 → 循环
 - **往返巡逻**：站立 10 秒后，以 200px/s 慢速跑向屏幕边缘 → 立即折返跑向另一边 → 跑回起点坐下（无时长限制）
 - **行走方向自适应**：向左走面朝左，向右走面朝右（自动镜像）
 - **可拖动**：鼠标拖到任意位置，位置自动记忆
@@ -96,7 +96,7 @@ dsh plugin --profile web add .\snoopy-pet
 2. 删除 `C:\Users\Administrator\.dsh\profiles\node_modules\@dsh-local\snoopy-pet`
 3. 重启 web 服务
 
-## 更换精灵图（使用者可配置路径，无需改代码）
+## 更换小宠图（使用者可配置路径，无需改代码）
 
 插件内置 4 姿态精灵图；想换成自己的小狗（或其他形象），**只需配置一个目录路径**：
 
