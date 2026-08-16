@@ -1,0 +1,36 @@
+{
+  "name": "@dsh-local/snoopy-pet",
+  "version": "2.5.0",
+  "description": "DeepSeek Harness 桌面小宠（snoopy-pet）：精灵图动画桌面小宠，两脚站立/行走、可拖动、悬停即停、可缩放、分时段弹语（1000 条，可指定路径替换）、对话完成语音提醒、桌面画中画（出去/回去）、往返巡逻，支持配置精灵图目录更换形象。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "dev"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "client-plugin",
+    "desktop-pet",
+    "pet"
+  ]
+}
